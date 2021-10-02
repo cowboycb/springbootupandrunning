@@ -1,0 +1,63 @@
+POST http://localhost:8080/actuator/loggers/org.springframework.web
+Content-Type: application/json
+
+{"configuredLevel": "TRACE"}
+
+###
+GET http://localhost:8080/actuator/loggers/org.springframework.web
+Accept: application/json
+
+<> 2021-10-02T152613.200.json
+<> 2021-10-02T123533.200.json
+<> 2021-10-02T123310.200.json
+
+###
+GET http://localhost:8080/actuator/health/
+Accept: application/json
+
+<> 2021-10-02T121920.200.json
+
+###
+GET http://localhost:8080/actuator/loggers
+Accept: application/json
+
+<> 2021-10-02T152521.200.json
+<> 2021-10-02T123156.200.json
+<> 2021-09-30T231642.200.json
+
+###
+GET http://localhost:8080/actuator/heapdump
+Accept: *
+
+<> 2021-09-30T230443.200.txt
+<> 2021-09-30T230420.406.json
+
+###
+GET http://localhost:8080/actuator/env
+Accept: application/json
+
+<> 2021-10-02T122320.200.json
+<> 2021-09-30T230304.200.json
+
+###
+GET http://localhost:8080/actuator/configprops
+Accept: application/json
+
+<> 2021-09-30T230138.200.json
+<> 2021-09-30T230118.404.json
+
+###
+GET http://localhost:8080/actuator
+Accept: application/json
+
+<> 2021-09-30T230125.200.json
+<> 2021-09-29T225745.200.json
+<> 2021-09-29T225557.404.json
+
+###
+###
+GET http://localhost:8080/greeting
+
+<> 2021-10-02T152631.200.txt
+<> 2021-10-02T124213.200.txt
+<> 2021-09-29T221521.200.txt
